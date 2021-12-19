@@ -1,0 +1,18 @@
+---
+- hosts: all
+  tasks:
+    - name: Download Selenoid CM
+      shell: "curl -fsSL https://github.com/aerokube/cm/releases/download/1.8.1/cm_linux_amd64 -o cm"
+    - name: Change Selenoid CM file permission
+      file:
+        dest: cm
+        mode: +x
+    - name: Copy Selenoid browsers configuration
+      copy:
+        src: android_only.json
+        dest: browsers.json
+        owner: '{{ ansible_user }}'
+    - name: Start Selenoid
+      shell: "./cm selenoid start --vnc --browsers-json browsers.json --args '-limit 3 -timeout 3m -cpu 3 -mem 3g -session-attempt-timeout 5m -service-startup-timeout 5m'"
+    - name: Start Selenoid UI
+      shell: "./cm selenoid-ui start"
