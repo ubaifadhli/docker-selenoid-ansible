@@ -1,11 +1,12 @@
 {
     "android": {
-        "default": "9.0",
+        "default": "7.1",
         "versions": {
-            "9.0": {
-                "image": "browsers/android:9.0",
+            "7.1": {
+                "image": "browsers/android:7.1",
                 "port": "4444",
-                "path": "/wd/hub"
+                "path": "/wd/hub",
+                "skin": "WXGA720"
             }
         }
     }
