@@ -1,6 +1,6 @@
 # Ansible scripts to install Docker and Selenoid
 
-## Requirements
+## Prerequisites
 - Ansible installed on your host machine
 - SSH key of your remote machine
 
