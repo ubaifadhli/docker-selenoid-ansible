@@ -33,7 +33,9 @@
                 "image": "browsers/android:7.1",
                 "port": "4444",
                 "path": "/wd/hub",
-                "skin": "WXGA720"
+                "skin": "720x1280",
+				"cpu": "2",
+				"mem": "1.5g"
             }
         }
     }
