@@ -1,8 +1,8 @@
 {
 	"firefox": {
-		"default": "latest",
+		"default": "95.0",
 		"versions": {
-			"latest": {
+			"95.0": {
 				"image": "selenoid/firefox:95.0",
 				"port": "4444",
 				"path": "/wd/hub",
@@ -14,9 +14,9 @@
 		}
 	},
 	"chrome": {
-		"default": "latest",
+		"default": "96.0",
 		"versions": {
-			"latest": {
+			"96.0": {
 				"image": "selenoid/chrome:96.0",
 				"port": "4444",
 				"tmpfs": {"/tmp":"size=512m"},
