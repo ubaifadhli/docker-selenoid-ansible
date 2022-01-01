@@ -6,10 +6,7 @@
 				"image": "selenoid/firefox:95.0",
 				"port": "4444",
 				"path": "/wd/hub",
-				"tmpfs": {"/tmp":"size=512m"},
-				"shmSize": 268435456,                     
-          		"cpu": "1.0",                             
-          		"mem": "1g"
+				"tmpfs": {"/tmp":"size=512m"}
 			}
 		}
 	},
@@ -19,10 +16,7 @@
 			"96.0": {
 				"image": "selenoid/chrome:96.0",
 				"port": "4444",
-				"tmpfs": {"/tmp":"size=512m"},
-				"shmSize": 268435456,                     
-          		"cpu": "1.0",                             
-          		"mem": "1g"
+				"tmpfs": {"/tmp":"size=512m"}
 			}
 		}
 	},
@@ -32,9 +26,7 @@
             "7.1": {
                 "image": "browsers/android:7.1",
                 "port": "4444",
-                "path": "/wd/hub",
-				"cpu": "2.0",
-				"mem": "1.5g"
+                "path": "/wd/hub"
             }
         }
     }
